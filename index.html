@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Berry's Personal Page</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    button { padding: 10px 20px; margin-top: 10px; }
+    #message { margin-top: 20px; color: blue; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+<h1>Welcome to Berry's Page</h1>
+<p>This is my personal GitHub Page with jQuery!</p>
+
+<button id="showMessage">Click me!</button>
+<div id="message"></div>
+
+<script>
+  // jQuery 功能：按下按鈕顯示訊息
+  $(document).ready(function() {
+    $("#showMessage").click(function() {
+      $("#message").text("Hello! This proves I can use jQuery on GitHub Pages!");
+    });
+  });
+</script>
+
+</body>
+</html>
